@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Matword_Students>
+			<version>1.0.0</version>
+		</Matword_Students>
+	</modules>
+	<global>
+		<models>
+			<matword_students>
+				<class>Matword_Students_Model</class>
+				<resourceModel>matword_students_resource</resourceModel>
+			</matword_students>
+			<matword_students_resource>
+				<class>Matword_Students_Model_Resource</class>
+				<entities>
+					<student>
+						<table>matword_students_student</table>
+					</student>
+				</entities>
+			</matword_students_resource>
+		</models>
+		<blocks>
+			<matword_students>
+				<class>Matword_Students_Block</class>
+			</matword_students>
+		</blocks>
+		<helpers>
+			<matword_students>
+				<class>Matword_Students_Helper</class>
+			</matword_students>
+		</helpers>
+		<resource>
+			<matword_students_setup>
+				<setup>
+					<module>Matword_Students</module>
+				</setup>
+			</matword_students_setup>
+		</resource>
+	</global>
+
+	<frontend>
+		<routers>
+			<matword_students>
+				<use>standard</use>
+				<args>
+					<module>Matword_Students</module>
+					<frontName>students</frontName>
+				</args>
+			</matword_students>
+		</routers>
+		<layout>
+			<updates>
+				<matword_students>
+					<file>student.xml</file>
+				</matword_students>
+			</updates>
+		</layout>
+	</frontend>
+	
+	<admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<Matword_Students after="Mage_Adminhtml">Matword_Students</Matword_Students>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
+	
+	<adminhtml>
+		<layout>
+			<updates>
+				<matword_students>
+					<file>student.xml</file>
+				</matword_students>
+			</updates>
+		</layout>
+	</adminhtml>
+
+</config>

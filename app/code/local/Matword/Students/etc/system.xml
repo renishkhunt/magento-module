@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<tabs>
+		<matword translate="label" module="matword_students">
+			<label>Matword</label>
+			<sort_order>100</sort_order>
+		</matword>
+	</tabs>
+	<sections>
+		<matword translate="label" module="matword_students">
+			<label>Students</label>
+			<tab>matword</tab>
+			<sort_order>1000</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+
+			<groups>
+				<matword_group translate="label" module="matword_students">
+					<label>Matword Students</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>1000</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+
+					<fields>
+						<matword_select translate="label">
+							<label>Dropdown:</label>
+							<comment>My First Dropdown</comment>
+							<frontend_type>select</frontend_type>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+						</matword_select>
+						<matword_input_page translate="label">
+							<label>Input Field:</label>
+							<comment>My Coment</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</matword_input_page>
+					</fields>
+
+				</matword_group>
+			</groups>
+
+		</matword>
+	</sections>
+</config>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<menu>
+		<matword translate="title" module="matword_students">
+			<title>Matword</title>
+			<sort_order>1</sort_order>
+			<children>
+				<students>
+					<title>Students</title>
+					<sort_order>0</sort_order>
+					<action>adminhtml/students/index</action>
+				</students>
+				<student>
+					<title>Student</title>
+					<sort_order>0</sort_order>
+					<action>adminhtml/student/index</action>
+				</student>
+			</children>
+		</matword>
+	</menu>
+	<acl>
+		<resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<matword>
+										<title>Matword - all</title>
+									</matword>
+								</children>
+							</config>
+						</children>
+					</system>
+					<matword translate="title" module="matword_students">
+						<title>Matword</title>
+						<sort_order>1</sort_order>
+						<children>
+							<students>
+								<title>Students</title>
+								<sort_order>0</sort_order>
+							</students>
+							<student>
+								<title>Student</title>
+								<sort_order>0</sort_order>
+							</student>
+						</children>
+					</matword>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>

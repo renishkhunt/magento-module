@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0">
+	<adminhtml_students_index>
+		<reference name="content">
+			<block type="adminhtml/template" name="adminhtml_students_index" template="student/students.phtml"></block>
+		</reference>
+	</adminhtml_students_index>
+	<adminhtml_student_index>
+		<reference name="content">
+			<block type="matword_students/adminhtml_student" name="matword_students_student"></block>
+		</reference>
+	</adminhtml_student_index>
+</layout>
